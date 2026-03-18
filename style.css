@@ -47,8 +47,8 @@ body {
 }
 
 .logo img {
-    height: 30px;
-    margin-right: 10px;
+    height: 40px;   /* Reduce size */
+    width: auto;    /* Maintain aspect ratio */
 }
 
 nav a {
