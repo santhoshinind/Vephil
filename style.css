@@ -53,10 +53,8 @@
 }
 
 .logo img {
-   .logo img {
-    width: 70px;   /* increase size */
-    margin-right: 10px;
-}
+    width: 50px;
+    height: auto;
 }
 
 .logo span {
