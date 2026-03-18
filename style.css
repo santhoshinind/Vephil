@@ -74,13 +74,7 @@ nav a:hover {
 /* ---------------------------
    Hero / Banner
 --------------------------- */
-.hero {
-    text-align: center;
-    padding: 120px 20px;
-    background: url('banner.jpg') no-repeat center center/cover; /* Optional banner image */
-    color: white;
-    position: relative;
-}
+
 
 .hero::after {
     content: "";
