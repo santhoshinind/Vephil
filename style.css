@@ -46,3 +46,19 @@
     display: block;
     margin: 0 auto 20px;
 }
+/* Logo + Text */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c5364;
+}
