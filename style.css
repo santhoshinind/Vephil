@@ -16,3 +16,33 @@
     font-size: 42px;
     margin-bottom: 20px;
 }
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    margin: 0;
+    color: #2c5364;
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Logo in hero */
+.hero img {
+    display: block;
+    margin: 0 auto 20px;
+}
