@@ -45,7 +45,10 @@ body {
     display: flex;
     align-items: center;
 }
-
+.logo span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
 .logo img {
     height: 40px;
     max-width: 150px; /* Prevent stretching */
