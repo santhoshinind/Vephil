@@ -47,10 +47,10 @@ body {
 }
 
 .logo img {
-    height: 40px;   /* Reduce size */
-    width: auto;    /* Maintain aspect ratio */
+    height: 40px;
+    max-width: 150px; /* Prevent stretching */
+    object-fit: contain;
 }
-
 nav a {
     margin-left: 20px;
     text-decoration: none;
