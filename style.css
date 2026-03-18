@@ -41,6 +41,11 @@ body {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 
 .logo span {
     font-size: 1.2em;
