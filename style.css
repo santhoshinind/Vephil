@@ -64,3 +64,33 @@
     font-weight: bold;
     color: #2c5364;
 }
+/* Vision Section */
+.vision {
+    background: #f0f4f8;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.vision h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #2c5364;
+}
+
+.vision ul {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.vision ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.vision-icons li {
+    font-size: 17px;
+    margin: 12px 0;
+}
