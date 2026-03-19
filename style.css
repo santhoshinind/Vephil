@@ -1,4 +1,7 @@
-/* Reset */
+img {
+    max-width: 100%;
+    height: auto;
+}/* Reset */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
