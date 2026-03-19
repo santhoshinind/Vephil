@@ -211,3 +211,13 @@ html {
     color: #6a0dad;
     margin-bottom: 20px;
 }
+/* Smart World Section */
+.smart-world {
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+.smart-world h2 {
+    color: #6a0dad;
+    margin-bottom: 20px;
+}
