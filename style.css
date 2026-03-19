@@ -86,10 +86,12 @@ body {
 }
 
 /* 🔥 PERFECT LOGO SIZE FIX */
+/* 🔥 FINAL FIX - FORCE SMALL LOGO */
 .logo img {
-    height: 32px;      /* small & clean */
-    width: auto;
-    display: block;
+    height: 30px !important;
+    width: auto !important;
+    max-height: 30px;
+    object-fit: contain;
 }
 
 /* Logo text */
