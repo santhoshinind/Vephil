@@ -41,7 +41,13 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
+/* Dark overlay for better text visibility */
+.slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
 /* Overlay text */
 .slide-content {
     position: absolute;
