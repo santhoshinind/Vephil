@@ -171,3 +171,9 @@ section {
 html {
     scroll-behavior: smooth;
 }
+.vision-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
