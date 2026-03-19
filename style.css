@@ -39,24 +39,23 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
 .logo {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.logo span {
-    font-size: 1.2em;
-    font-weight: bold;
-}
+/* 🔥 FINAL FIX */
 .logo img {
-    height: 35px;      /* 🔥 perfect size */
-    width: auto;       /* keep ratio */
-    max-width: none;   /* stop stretching */
-    object-fit: contain;
+    height: 32px;        /* perfect small size */
+    width: auto;
+    flex-shrink: 0;      /* prevents stretching */
     display: block;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
 }
 nav a {
     margin-left: 20px;
