@@ -13,11 +13,18 @@ body {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero {
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: white;
     text-align: center;
     padding: 120px 20px;
+}
+
+/* 👇 ADD HERE */
+.hero img {
+    display: block;
+    margin: 0 auto 20px;
 }
 
 .hero h1 {
