@@ -191,3 +191,13 @@ html {
     margin-bottom: 8px;
     line-height: 1.6;
 }
+/* IEP Section */
+.iep {
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+.iep h2 {
+    color: #6a0dad;
+    margin-bottom: 20px;
+}
