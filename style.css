@@ -88,15 +88,13 @@ body {
     gap: 10px;
 }
 
-/* 🔥 PERFECT LOGO SIZE FIX */
-/* 🔥 FINAL FIX - FORCE SMALL LOGO */
 .logo img {
-    height: 30px
-    width: auto
-    max-height: 30px;
+    height: auto;
+    width: auto;
+    max-height: 50px;   /* controls vertical size */
+    max-width: 120px;   /* controls horizontal size */
     object-fit: contain;
 }
-
 /* Logo text */
 .logo span {
     font-size: 20px;
