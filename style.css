@@ -51,9 +51,9 @@ body {
     position: absolute;
     bottom: 20%;
     left: 10%;
-    color: #fff;
     max-width: 700px;
-    z-index: 2;   /* 🔥 IMPORTANT */
+    color: #fff;
+    z-index: 2;
 }
 
 .slide-content h1 {
