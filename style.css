@@ -18,8 +18,12 @@ body {
 /* Hero Section with Banner */
 /* Slider */
 .hero-slider {
+    position: relative;
+    width: 100%;
     height: 70vh;
+    overflow: hidden;
 }
+
 
 .slide img {
     width: 100%;
