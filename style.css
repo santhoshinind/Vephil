@@ -91,7 +91,7 @@ body {
 /* 🔥 PERFECT LOGO SIZE FIX */
 /* 🔥 FINAL FIX - FORCE SMALL LOGO */
 .logo img {
-    height: 25px
+    height: 35px
     width: auto
     max-height: 30px;
     object-fit: contain;
