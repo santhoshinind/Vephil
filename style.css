@@ -275,3 +275,46 @@ html {
 .service-card li {
     margin-bottom: 8px;
 }
+/* Split Section */
+.creator-services {
+    padding: 80px 20px;
+    background: #f4f8fb;
+}
+
+/* Layout */
+.split-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left + Right boxes */
+.creator-box,
+.services-box {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.creator-box h2,
+.services-box h2 {
+    color: #6a0dad;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+.creator-box ul,
+.services-box ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.creator-box li,
+.services-box li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
