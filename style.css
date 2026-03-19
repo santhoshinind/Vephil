@@ -201,3 +201,13 @@ html {
     color: #6a0dad;
     margin-bottom: 20px;
 }
+/* AEI Section */
+.aei {
+    padding: 80px 20px;
+    background: #f9fbff;
+}
+
+.aei h2 {
+    color: #6a0dad;
+    margin-bottom: 20px;
+}
