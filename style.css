@@ -1,180 +1,44 @@
-   General Reset & Fonts
---------------------------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
 body {
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
-}
-img {
-    max-width: none;
-}
-/* ---------------------------
-   Container
---------------------------- */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* ---------------------------
-   Navbar
---------------------------- */
-.navbar {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-/* 🔥 FINAL FIX */
-.logo img {
-    height: 32px;        /* perfect small size */
-    width: auto;
-    flex-shrink: 0;      /* prevents stretching */
-    display: block;
-}
-
-.logo span {
-    font-size: 20px;
-    font-weight: bold;
-}
-nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ff6600;
-}
-
-/* ---------------------------
-   Hero / Banner
---------------------------- */
-
-
-
 
 .hero h1 {
-    font-size: 2.8em;
-    margin-bottom: 15px;
-}
-
-.hero .sub-heading {
-    font-size: 1.3em;
-    margin-bottom: 10px;
-}
-
-.hero .tagline {
-    font-size: 1.1em;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #ff6600;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
+.sub-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.btn:hover {
-    background-color: #e65c00;
+.tagline {
+    font-size: 16px;
+    opacity: 0.8;
 }
 
-/* ---------------------------
-   Sections
---------------------------- */
-section {
-    padding: 80px 0;
-}
-
+/* About Section */
 .about {
-    text-align: left;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.about h2,
-.vision h2 {
-    font-size: 2em;
+.about h2 {
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
-.about p,
-.vision p {
-    font-size: 1.1em;
-    margin-bottom: 15px;
+.about p {
+    max-width: 700px;
+    margin: 10px auto;
     line-height: 1.6;
-}
-
-/* ---------------------------
-   Vision Section
---------------------------- */
-.vision ul {
-    margin-left: 20px;
-    list-style-type: disc;
-}
-
-.vision-icons li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-/* ---------------------------
-   Responsive Design
---------------------------- */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero .sub-heading,
-    .hero .tagline {
-        font-size: 1em;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .about,
-    .vision {
-        padding: 50px 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 1.6em;
-    }
-
-    .btn {
-        padding: 10px 20px;
-        font-size: 0.9em;
-    }
 }
