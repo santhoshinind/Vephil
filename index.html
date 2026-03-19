@@ -9,22 +9,22 @@
 </head>
     <body>
 <script>
-const slides = document.querySelectorAll(".slide");
-let currentSlide = 0;
+document.addEventListener("DOMContentLoaded", function () {
 
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove("active"));
-    currentSlide = (index + slides.length) % slides.length;
-    slides[currentSlide].classList.add("active");
-}
+    const slides = document.querySelectorAll(".slide");
+    let currentSlide = 0;
 
-function changeSlide(step) {
-    showSlide(currentSlide + step);
-}
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove("active"));
+        currentSlide = (index + slides.length) % slides.length;
+        slides[currentSlide].classList.add("active");
+    }
 
-setInterval(() => {
-    changeSlide(1);
-}, 4000);
+    setInterval(() => {
+        showSlide(currentSlide + 1);
+    }, 4000);
+
+});
 </script>
 <!-- Header / Navbar -->
 <header class="navbar">
