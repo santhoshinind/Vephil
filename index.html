@@ -7,7 +7,7 @@
     <title>Vephil</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+    <body>
 
 <!-- Header / Navbar -->
 <header class="navbar">
@@ -103,5 +103,24 @@
 
     </div>
 </section>
+<script>
+let slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
+
+function showSlide(index) {
+    slides.forEach((slide) => slide.classList.remove("active"));
+    currentSlide = (index + slides.length) % slides.length;
+    slides[currentSlide].classList.add("active");
+}
+
+function changeSlide(step) {
+    showSlide(currentSlide + step);
+}
+
+setInterval(() => {
+    changeSlide(1);
+}, 4000);
+</script>
 </body>
+    </body>
 </html>
