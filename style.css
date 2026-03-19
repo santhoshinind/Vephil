@@ -110,3 +110,37 @@ nav a {
     color: #333;
     font-weight: 500;
 }
+/* ---------------------------
+   Vision Layout
+--------------------------- */
+.vision-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left text */
+.vision-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Right image */
+.vision-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Placeholder box */
+.image-placeholder {
+    width: 100%;
+    height: 300px;
+    background: #e6eef5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 18px;
+    border-radius: 10px;
+}
