@@ -1,6 +1,3 @@
-img {
-    max-width: 100%;
-    height: auto;
 }/* ---------------------------
    General Reset & Fonts
 --------------------------- */
@@ -47,6 +44,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    gap: 8px;
 }
 
 .logo span {
@@ -54,9 +52,10 @@ body {
     font-weight: bold;
 }
 .logo img {
-    height: 40px !important;
-    width: auto !important;
-    max-width: 120px;
+    height: 35px;      /* 🔥 perfect size */
+    width: auto;       /* keep ratio */
+    max-width: none;   /* stop stretching */
+    object-fit: contain;
     display: block;
 }
 nav a {
