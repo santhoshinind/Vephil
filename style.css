@@ -177,3 +177,17 @@ html {
     object-fit: cover;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
+.vision-text h3 {
+    margin-top: 25px;
+    color: #6a0dad;
+    font-size: 20px;
+}
+
+.vision-text ul {
+    margin: 10px 0 20px 20px;
+}
+
+.vision-text li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
