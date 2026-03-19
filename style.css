@@ -1,7 +1,9 @@
 img {
     max-width: 100%;
     height: auto;
-}/* Reset */
+}
+
+/* Reset */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -15,77 +17,131 @@ body {
     padding: 20px;
 }
 
-/* Hero Section with Banner */
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: auto;
+    width: auto;
+    max-height: 60px;
+    max-width: 150px;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a0dad;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
 /* Slider */
 .hero-slider {
     position: relative;
     width: 100%;
     height: 70vh;
     overflow: hidden;
+    background: #000;
 }
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
 }
 
 .slide.active {
     opacity: 1;
+    visibility: visible;
+    z-index: 1;
 }
+
+.slide img {
     width: 100%;
     height: 100%;
-    object-fit: contain;   /* ✅ shows full image */
-    background-color: #000; /* fills empty space */
+    object-fit: contain;   /* full image visible */
+    object-position: center;
+    display: block;
+    background: #000;
 }
-/* Dark overlay for better text visibility */
+
 .slide::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.28);
 }
-/* Overlay text */
+
 .slide-content {
     position: absolute;
-    bottom: 20%;
-    left: 10%;
-    max-width: 700px;
-    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    color: #ffffff;
     z-index: 2;
+    padding: 20px;
 }
 
 .slide-content h1 {
-    font-size: 48px;
-    line-height: 1.2;
-    font-weight: 600;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    font-size: 44px;
+    line-height: 1.25;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
 }
 
-.hero h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
+/* Slider buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    border: none;
+    font-size: 28px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
-.sub-heading {
-    font-size: 20px;
-    margin-bottom: 10px;
+.slider-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
 }
 
-.tagline {
-    font-size: 16px;
-    opacity: 0.8;
-    margin-bottom: 20px;
+.prev {
+    left: 20px;
 }
 
-/* Button */
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #00c6ff;
-    color: #6a0dad;
-    text-decoration: none;
-    border-radius: 5px;
+.next {
+    right: 20px;
 }
 
 /* About Section */
@@ -106,51 +162,8 @@ body {
     line-height: 1.6;
     color: #333;
 }
-/* Navbar */
-.navbar {
-    background: #fff;
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd;
-}
 
-/* Layout */
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Logo section */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo img {
-    height: auto;
-    width: auto;
-    max-height: 60px;   /* increased from 50 → 60 */
-    max-width: 150px;   /* increased slightly */
-    object-fit: contain;
-}
-/* Logo text */
-.logo span {
-    font-size: 20px;
-    font-weight: bold;
-    color: #6a0dad;   /* 💜 purple */
-}
-
-/* Navigation */
-nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-/* ---------------------------
-   Vision Layout
---------------------------- */
+/* Vision Layout */
 .vision-container {
     display: flex;
     align-items: center;
@@ -158,19 +171,16 @@ nav a {
     flex-wrap: wrap;
 }
 
-/* Left text */
 .vision-text {
     flex: 1;
     min-width: 300px;
 }
 
-/* Right image */
 .vision-image {
     flex: 1;
     min-width: 300px;
 }
 
-/* Placeholder box */
 .image-placeholder {
     width: 100%;
     height: 300px;
