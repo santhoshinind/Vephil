@@ -460,3 +460,7 @@ html {
         bottom: 8%;
     }
 }
+/* Fix creator full width after removing services */
+.creator-box {
+    width: 100%;
+}
