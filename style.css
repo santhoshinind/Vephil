@@ -795,3 +795,29 @@ html {
         border-right: none;
     }
 }
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background: #f8f9fc;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #6a0dad;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
