@@ -464,3 +464,168 @@ html {
 .creator-box {
     width: 100%;
 }
+/* Smart World Redesign */
+.smart-world {
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+.smart-world-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.smart-world-header h2 {
+    font-size: 36px;
+    color: #6a0dad;
+    margin-bottom: 10px;
+}
+
+.smart-world-subtitle {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.smart-world-intro {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.smart-world-intro-text,
+.smart-card {
+    background: #f8f9fc;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.smart-world-intro-text h3,
+.smart-card h3 {
+    color: #222;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.smart-world-intro-text p,
+.smart-card p,
+.smart-card li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.smart-world-intro-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.smart-world-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.smart-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.smart-card li {
+    margin-bottom: 10px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.highlight-card {
+    background: linear-gradient(135deg, #f4ebff, #eef4ff);
+    border: 1px solid #e2d4ff;
+}
+
+.smart-table {
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.smart-table-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+.smart-table-row div {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.smart-table-row div:last-child {
+    border-right: none;
+}
+
+.smart-table-row:last-child div {
+    border-bottom: none;
+}
+
+.smart-table-head {
+    background: #6a0dad;
+    color: #fff;
+    font-weight: bold;
+}
+
+.smart-table-head div {
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .smart-world-intro,
+    .smart-world-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .smart-world {
+        padding: 50px 15px;
+    }
+
+    .smart-world-header h2 {
+        font-size: 28px;
+    }
+
+    .smart-world-subtitle {
+        font-size: 16px;
+    }
+
+    .smart-world-intro-text h3,
+    .smart-card h3 {
+        font-size: 22px;
+    }
+
+    .smart-table-row {
+        grid-template-columns: 1fr;
+    }
+
+    .smart-table-row div {
+        border-right: none;
+    }
+}
