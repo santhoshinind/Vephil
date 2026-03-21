@@ -629,3 +629,163 @@ html {
         border-right: none;
     }
 }
+/* AEI Redesign */
+.aei {
+    padding: 80px 20px;
+    background: #f8fbff;
+}
+
+.aei-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.aei-header h2 {
+    font-size: 36px;
+    color: #6a0dad;
+    margin-bottom: 10px;
+}
+
+.aei-subtitle {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.aei-intro {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.aei-intro-text,
+.aei-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.aei-intro-text h3,
+.aei-card h3 {
+    color: #222;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.aei-intro-text p,
+.aei-card p,
+.aei-card li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.aei-intro-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.aei-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.aei-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.aei-card li {
+    margin-bottom: 10px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.aei-table {
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.aei-table-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+.aei-table-row div {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.aei-table-row div:last-child {
+    border-right: none;
+}
+
+.aei-table-row:last-child div {
+    border-bottom: none;
+}
+
+.aei-table-head {
+    background: #6a0dad;
+    color: #fff;
+    font-weight: bold;
+}
+
+.aei-table-head div {
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .aei-intro,
+    .aei-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .aei {
+        padding: 50px 15px;
+    }
+
+    .aei-header h2 {
+        font-size: 28px;
+    }
+
+    .aei-subtitle {
+        font-size: 16px;
+    }
+
+    .aei-intro-text h3,
+    .aei-card h3 {
+        font-size: 22px;
+    }
+
+    .aei-table-row {
+        grid-template-columns: 1fr;
+    }
+
+    .aei-table-row div {
+        border-right: none;
+    }
+}
