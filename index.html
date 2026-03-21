@@ -541,16 +541,42 @@
     <!-- Contact Section -->
 <section class="contact" id="contact">
     <div class="container">
-
         <h2>Contact Us</h2>
+        <p>
+            If you would like to connect, collaborate, or learn more about AEI and IEP, send us a message below.
+        </p>
 
-        <p>If you would like to connect, collaborate, or learn more about AEI and IEP:</p>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><strong>Email:</strong> <a href="mailto:pallala@vephil.com">pallala@vephil.com</a></p>
+                <p><strong>Location:</strong> India</p>
+            </div>
 
-        <div class="contact-box">
-            <p><strong>Email:</strong> pallala@vephil.com</p>
-            <p><strong>Location:</strong> India</p>
+            <form class="contact-form" action="mailto:pallala@vephil.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="Subject" placeholder="Enter subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="Message" rows="6" placeholder="Write your message" required></textarea>
+                </div>
+
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
         </div>
-
     </div>
 </section>
 
