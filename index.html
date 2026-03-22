@@ -542,44 +542,46 @@
 <section class="contact" id="contact">
     <div class="container">
         <h2>Contact Us</h2>
-        <p>
-            If you would like to connect, collaborate, or learn more about AEI and IEP, send us a message below.
-        </p>
+        <p>If you would like to connect, collaborate, or learn more, send us a message.</p>
 
         <div class="contact-wrapper">
+
+            <!-- Contact Info -->
             <div class="contact-info">
                 <h3>Get in Touch</h3>
-                <p><strong>Email:</strong> <a href="mailto:pallala@vephil.com">pallala@vephil.com</a></p>
+                <p><strong>Email:</strong> 
+                    <a href="mailto:pallala@vephil.com">pallala@vephil.com</a>
+                </p>
                 <p><strong>Location:</strong> India</p>
             </div>
 
-           https://formspree.io/f/mqeyovog
+            <!-- Contact Form -->
+            <form class="contact-form" action="https://formspree.io/f/mqeyovog" method="POST">
+
+                <input type="hidden" name="_subject" value="New message from Vephil Website">
+
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <input type="text" name="name" placeholder="Your Name" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="6" placeholder="Write your message" required></textarea>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                 </div>
 
                 <button type="submit" class="contact-btn">Send Message</button>
             </form>
+
         </div>
     </div>
-</section>
-    <!-- Footer -->
+</section>    <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
 
