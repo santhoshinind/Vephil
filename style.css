@@ -194,9 +194,145 @@ nav a {
     background: #ffffff;
 }
 
-.iep h2 {
+.iep-intro {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.iep-intro-image {
+    flex: 1;
+    text-align: center;
+}
+
+.iep-intro-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 8px;
+}
+
+.iep-intro-text {
+    flex: 1;
+}
+
+.iep-intro-text h2 {
+    font-size: 32px;
     color: #6a0dad;
+    margin-bottom: 10px;
+}
+
+.iep-subtitle {
+    font-size: 18px;
     margin-bottom: 20px;
+    color: #555;
+}
+
+.iep-intro-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* IEP Grid */
+.iep-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.iep-card {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.iep-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.iep-card p,
+.iep-card li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.iep-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.iep-card li {
+    margin-bottom: 10px;
+}
+
+.iep-table {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.iep-table-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+.iep-table-row div {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.iep-table-row div:last-child {
+    border-right: none;
+}
+
+.iep-table-row:last-child div {
+    border-bottom: none;
+}
+
+.iep-table-head {
+    background: #6a0dad;
+    color: #fff;
+    font-weight: bold;
+}
+
+.iep-table-head div {
+    color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .iep-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .iep-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .iep-intro-image img {
+        max-width: 100%;
+    }
+
+    .iep-table-row {
+        grid-template-columns: 1fr;
+    }
+
+    .iep-table-row div {
+        border-right: none;
+    }
 }
 /* AEI Section */
 .aei {
