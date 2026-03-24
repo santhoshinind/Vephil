@@ -139,7 +139,12 @@ nav a {
     color: #333;
 }
 
-/* Vision Layout */
+/* Vision Section */
+.vision {
+    padding: 80px 20px;
+    background: #f9f9f9;
+}
+
 .vision-container {
     display: flex;
     align-items: center;
@@ -149,50 +154,39 @@ nav a {
 
 .vision-text {
     flex: 1;
-    min-width: 300px;
+}
+
+.vision-text h2 {
+    font-size: 32px;
+    color: #6a0dad;
+    margin-bottom: 10px;
+}
+
+.vision-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.vision-points {
+    list-style: none;
+    padding: 0;
+}
+
+.vision-points li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
 }
 
 .vision-image {
     flex: 1;
-    min-width: 300px;
+    text-align: center;
 }
-.image-placeholder {
-    width: 100%;
-    height: 300px;
-    background: #e6eef5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 18px;
-    border-radius: 10px;
-}
-/* Scroll Fix for Navbar */
-section {
-    scroll-margin-top: 90px;
-}
-html {
-    scroll-behavior: smooth;
-}
+
 .vision-image img {
     width: 100%;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-.vision-text h3 {
-    margin-top: 25px;
-    color: #6a0dad;
-    font-size: 20px;
-}
-
-.vision-text ul {
-    margin: 10px 0 20px 20px;
-}
-
-.vision-text li {
-    margin-bottom: 8px;
-    line-height: 1.6;
+    max-width: 400px;
 }
 /* IEP Section */
 .iep {
