@@ -928,3 +928,23 @@ nav a {
         font-size: 28px;
     }
 }
+/* Vision Section */
+.vision {
+    padding: 80px 20px;
+    background: #f9f9f9;
+}
+
+/* ... all your vision CSS ... */
+
+
+/* ✅ ADD THIS AT THE END */
+@media (max-width: 768px) {
+    .vision-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vision-image img {
+        max-width: 100%;
+    }
+}
