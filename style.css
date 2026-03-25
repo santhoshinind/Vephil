@@ -65,6 +65,7 @@ nav a {
 
 /* Slider */
 .hero-slider {
+    scroll-margin-top: 0;
     position: relative;
     width: 100%;
     height: 70vh;
@@ -75,7 +76,7 @@ nav a {
 .slide {
     position: absolute;
     inset: 0;
-    opacity: 0;
+    opafvcity: 0;
     visibility: hidden;
     transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
 }
