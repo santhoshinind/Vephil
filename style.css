@@ -623,11 +623,6 @@ nav a {
     .creator-text ul {
         text-align: left;
     }
-}/* Mobile View Improvements */
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
 
     /* Navbar */
     .nav-container {
