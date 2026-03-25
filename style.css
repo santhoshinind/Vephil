@@ -558,66 +558,72 @@ nav a {
 .service-card li {
     margin-bottom: 8px;
 }
-/* Split Section */
+/* Creator Section */
 .creator-services {
     padding: 80px 20px;
-    background: #f4f8fb;
+    background: #f8f9fc;
 }
 
-/* Layout */
-.split-container {
+.creator-layout {
     display: flex;
+    align-items: center;
     gap: 40px;
     flex-wrap: wrap;
 }
 
-/* Left + Right boxes */
-.creator-box,
-.services-box {
+.creator-text {
     flex: 1;
-    min-width: 300px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* Headings */
-.creator-box h2,
-.services-box h2 {
+.creator-text h2 {
+    font-size: 32px;
     color: #6a0dad;
     margin-bottom: 15px;
 }
 
-/* Lists */
-.creator-box ul,
-.services-box ul {
-    margin-top: 10px;
+.creator-text p,
+.creator-text li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.creator-text ul {
     padding-left: 20px;
+    margin-top: 12px;
 }
 
-.creator-box li,
-.services-box li {
-    margin-bottom: 8px;
-    line-height: 1.6;
+.creator-text li {
+    margin-bottom: 10px;
 }
-.creator-box,
-.services-box {
+
+.creator-image {
     flex: 1;
-    min-width: 300px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-/* 👇 ADD HERE */
-.creator-box:hover,
-.services-box:hover {
-    transform: translateY(-5px);
-    transition: 0.3s;
+.creator-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
-/* Mobile View Improvements */
+
+/* Mobile */
+@media (max-width: 768px) {
+    .creator-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .creator-image img {
+        max-width: 100%;
+    }
+
+    .creator-text ul {
+        text-align: left;
+    }
+}/* Mobile View Improvements */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
