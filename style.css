@@ -65,40 +65,7 @@ nav a {
 
 /* Slider */
 .hero-slider {
-    /* ===== NEW HERO TEXT (LEFT STYLE) ===== */
-.hero-content.left {
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    max-width: 600px;
-    text-align: left;
-    z-index: 2;
-}
 
-.hero-content.left h1 {
-    font-size: 36px;
-    color: #fff;
-    line-height: 1.4;
-    font-weight: 600;
-    text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
-}
-
-.hero-content.left h1 span {
-    color: #00d4ff;
-}
-
-.hero-content.left p {
-    margin-top: 15px;
-    font-size: 18px;
-    color: #ddd;
-}
-
-.hero-author {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #bbb;
-}
     scroll-margin-top: 0;
     position: relative;
     width: 100%;
