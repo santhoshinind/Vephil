@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #f5f7fa;
-    padding-top: 80px; /* space for fixed navbar */
+    padding-top: 130px; /* navbar + sub-header space */
 }
 
 /* Container */
@@ -68,11 +68,13 @@ nav a {
     background: linear-gradient(90deg, #6a0dad, #8a2be2);
     color: #ffffff;
     text-align: center;
-    padding: 14px 20px;
-    font-size: 16px;
+    padding: 12px 20px;
+    font-size: 15px;
     font-weight: 500;
-    position: relative;
-    z-index: 10;
+    position: fixed;
+    top: 80px;   /* sits below navbar */
+    left: 0;
+    z-index: 999;
     box-sizing: border-box;
 }
 
@@ -102,7 +104,6 @@ nav a {
     z-index: 1;
     scroll-margin-top: 0;
 }
-
 .slide {
     position: absolute;
     inset: 0;
