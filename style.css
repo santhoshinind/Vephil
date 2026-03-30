@@ -35,6 +35,22 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+/* ===== SUB HEADER ===== */
+.sub-header {
+    background: linear-gradient(90deg, #6a0dad, #8a2be2);
+    color: #fff;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 15px;
+}
+
+.sub-header span {
+    color: #00d4ff;
+}
+
+.sub-header strong {
+    margin-left: 10px;
+}
 
 .logo {
     display: flex;
