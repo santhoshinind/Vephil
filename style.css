@@ -36,20 +36,36 @@ body {
     align-items: center;
 }
 /* ===== SUB HEADER ===== */
+/* ===== SUB HEADER ===== */
 .sub-header {
+    width: 100%;
     background: linear-gradient(90deg, #6a0dad, #8a2be2);
-    color: #fff;
+    color: #ffffff !important;
     text-align: center;
-    padding: 12px 20px;
-    font-size: 15px;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    z-index: 999;
+    position: relative;
 }
 
+/* Paragraph inside */
+.sub-header p {
+    margin: 0;
+    color: #ffffff !important;
+}
+
+/* Highlighted text */
 .sub-header span {
-    color: #00d4ff;
+    color: #00e5ff !important;
+    font-weight: 600;
 }
 
+/* Author name */
 .sub-header strong {
     margin-left: 10px;
+    color: #ffffff !important;
 }
 
 .logo {
