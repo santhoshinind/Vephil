@@ -35,37 +35,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-/* ===== SUB HEADER ===== */
-.sub-header {
-    width: 100%;
-    background: linear-gradient(90deg, #6a0dad, #8a2be2);
-    color: #ffffff !important;
-    text-align: center;
-    padding: 14px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    display: block;
-    z-index: 999;
-    position: relative;
-}
-
-/* Paragraph inside */
-.sub-header p {
-    margin: 0;
-    color: #ffffff !important;
-}
-
-/* Highlighted text */
-.sub-header span {
-    color: #00e5ff !important;
-    font-weight: 600;
-}
-
-/* Author name */
-.sub-header strong {
-    margin-left: 10px;
-    color: #ffffff !important;
-}
 
 .logo {
     display: flex;
@@ -92,6 +61,42 @@ nav a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
+}
+.sub-header {
+    width: 100%;
+    background: linear-gradient(90deg, #6a0dad, #8a2be2);
+    color: #ffffff !important;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    z-index: 5;
+}
+
+.sub-header p {
+    margin: 0;
+    color: #ffffff !important;
+}
+
+.sub-header span {
+    color: #00e5ff !important;
+    font-weight: 600;
+}
+
+.sub-header strong {
+    margin-left: 10px;
+    color: #ffffff !important;
+}
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    margin-top: 0;
+    z-index: 1;
 }
 
 /* Slider */
