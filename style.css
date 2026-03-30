@@ -72,7 +72,7 @@ nav a {
     font-size: 15px;
     font-weight: 500;
     position: fixed;
-    top: 80px;   /* sits below navbar */
+    top: 65px;   /* sits below navbar */
     left: 0;
     z-index: 999;
     box-sizing: border-box;
