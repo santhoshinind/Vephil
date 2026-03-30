@@ -21,7 +21,7 @@ body {
 /* Navbar */
 .navbar {
     position: fixed;
-    top: 82;
+    top: 0;
     width: 100%;
     z-index: 1000;
     background: #ffffff;
