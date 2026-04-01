@@ -1,11 +1,11 @@
-img {
-    max-width: 100%;
-    height: auto;
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-/* Reset */
 body {
-    margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #f5f7fa;
     padding-top: 76px;
