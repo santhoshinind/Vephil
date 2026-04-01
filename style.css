@@ -59,7 +59,9 @@ nav a {
     font-weight: 500;
 }
 
-.sub-header {
+.sub-header .container {
+    text-align: center;
+}
     width: 100%;
     background: linear-gradient(90deg, #6a0dad, #8a2be2);
     color: #ffffff;
