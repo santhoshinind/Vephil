@@ -10,6 +10,17 @@ body {
     background-color: #f5f7fa;
     padding-top: 76px;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+.hero-slider {
+    scroll-margin-top: 0;
+}
 
 /* Container */
 .container {
