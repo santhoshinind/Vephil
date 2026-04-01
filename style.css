@@ -2,17 +2,26 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Reset */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #f5f7fa;
-    padding-top: 76px; /* only for fixed navbar */
+    padding-top: 76px;
 }
 
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
     background: #ffffff;
@@ -50,53 +59,27 @@ nav {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: 18px;
 }
 
 nav a {
-    margin-left: 20px;
     text-decoration: none;
     color: #333;
     font-weight: 500;
-}
-
-.sub-header .container {
-    text-align: center;
-}
-    width: 100%;
-    background: linear-gradient(90deg, #6a0dad, #8a2be2);
-    color: #ffffff;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-    box-sizing: border-box;
-}
-
-.sub-header p {
     margin: 0;
-    color: #ffffff;
 }
 
-.sub-header span {
-    color: #00e5ff;
-    font-weight: 600;
-}
-
-.sub-header strong {
-    margin-left: 10px;
-    color: #ffffff;
-}
-
+/* Slider */
 .hero-slider {
     position: relative;
     width: 100%;
     height: 70vh;
     overflow: hidden;
     background: #000;
-    margin-top: 0;
     z-index: 1;
     scroll-margin-top: 0;
 }
-/* Reset */
+
 .slide {
     position: absolute;
     inset: 0;
