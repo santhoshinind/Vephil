@@ -1314,3 +1314,9 @@ nav a {
     font-size: 14px;
     color: #bbb;
 }
+.quote-section h5 {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
+}
